@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar color="blue" >
+    <v-app-bar color="deep-purple-darken-2" >
         <div>
             <v-btn to="/" color="white" dark >Home </v-btn>
             
