@@ -1,6 +1,6 @@
 <template>
      <v-container>
-        <v-card color="purple" >
+        <v-card color="deep-purple-darken-2" >
             <v-card-title>
                 <div class="text-h3">Our Menu</div>
             </v-card-title>
@@ -13,7 +13,7 @@
             <v-row>
                 <v-col cols="12" md="4" v-for= "Item in menuItems " :key="Item" >
                     <v-card>
-                        <v-card color="purple">
+                        <v-card color="teal">
                             <v-card-item>
                                 <v-card-title>{{ Item.name }}</v-card-title>
 
@@ -24,6 +24,11 @@
                          {{ Item.price }}
                         </v-card-text>
                         <v-btn @click="addToOrder(item)">Order</v-btn>
+                        <v-card-actions>
+        <v-btn  background-color= "white" color="black" variant="tonal" @click="removeFromOrder(item)"> Remove</v-btn>
+    </v-card-actions>
+
+
                         </v-card>
                         </v-card>
                 </v-col>
@@ -62,6 +67,8 @@
     </template>
 
 <script setup>
+import { ref } from 'vue'
+
 const menuItems = [
     {
         name: "Chips",
@@ -115,24 +122,18 @@ const menuItems = [
 ]
 
 //manage the current state of the order
-var orderItems = []
-var totalOrderAmount = 0
+const orderItems  = ref([])
+const totalOrderAmount = ref(0)
 
 function calculateTotalAmount(price){
-    totalOrderAmount += price
+    totalOrderAmount.value += price
 
 }
 
 function addToOrder (item){
-    orderItems.push(item)
+    orderItems.value.push(item)
     calculateTotalAmount(item.price)
 }
-import { ref } from 'vue'
-
-
-var orderItems = ref([])
-var totalOrderAmount = ref(0)
-
 
 function removeFromOrder(item){
     orderItems.value.pop(item)

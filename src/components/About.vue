@@ -24,7 +24,7 @@
             <v-row>
                 <v-col cols="12" md="12"  >
                     <v-card>
-                        <v-card color="teal-accent-3">
+                        <v-card color="gold">
                           <v-card-item>
                                
                             <v-card-title>
@@ -59,18 +59,19 @@ Today, Avani currently stands as a symbol of culinary excellence and heartfelt h
             <v-row>
                 <v-col cols="12" >
                     <v-card>
-                        <v-card color="teal-accent-3">
+                        <v-card color="white">
                             <v-card-item>
                                 <v-card-title>
-                                    <h5><emp>Objecives</emp></h5>
+                                 <h5><emp>Objectives</emp></h5>
                                 </v-card-title>
 
                                
                             </v-card-item>
                             
                             <v-card-text>
-                                1. Deliver Exceptional Customer Service
-Objective: Provide a consistently outstanding dining experience through friendly, attentive service, ensuring every guest feels valued and welcomed.
+
+                               <p> 1. Deliver Exceptional Customer Service
+                                Objective: Provide a consistently outstanding dining experience through friendly, attentive service, ensuring every guest feels valued and welcomed.
 Goal: Achieve a customer satisfaction rating of 90% or higher across all feedback platforms.
 
 2. Maintain High-Quality Standards
@@ -108,7 +109,7 @@ Goal: Achieve a 10% increase in annual revenue through new business opportunitie
 10. Prioritize Health and Safety Compliance
 Objective: Maintain strict adherence to food safety regulations and provide a clean, safe dining environment for both guests and staff.
 Goal: Pass all health inspections with zero violations and ensure ongoing staff training on safety protocols.
-
+</p>
                         </v-card-text>
                         
                         </v-card>
@@ -117,14 +118,18 @@ Goal: Pass all health inspections with zero violations and ensure ongoing staff 
              </v-row>
             </v-container>          
         </v-card>
-    </v-container>    
+    </v-container> <br><br>
+    <h1>AVANI RESTAURANT</h1>
+    <h3>Where Class Meets Fine Dining</h3>
+     
     
 
-<
+
     </template>
      <style>
      h5 {
-        font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'lato';
+        display: flex; justify-content: center;align-items: center; width: 100%;
        
      }
      p {

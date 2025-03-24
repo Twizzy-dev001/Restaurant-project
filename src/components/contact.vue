@@ -1,6 +1,6 @@
 <template>
     <h1>Contact_us</h1>
-    </template>
+     </template>
 
 <script setup>
 

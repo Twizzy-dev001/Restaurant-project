@@ -3,7 +3,7 @@
     <v-container>
     <v-card class="mx-auto" elevation="24">
 
-<v-carousel hide-delimiters cycle>
+<v-carousel hide-delimiters cycle interval="4000" transition="slide-y">
     <v-carousel-item src="../public/table-with-glasses-ready-lunch.jpg " cover> </v-carousel-item>
     <v-carousel-item src="../public/wine-glass.jpg " cover> </v-carousel-item>
     
